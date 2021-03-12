@@ -1,6 +1,154 @@
-tdevest1 1111  kdklazylsraaaf 先休息
-大量的修改
-aa
-bb
+<?xml version="1.0" encoding="UTF-8"?>
 
-ks5r3Nw4ZSYfp$4J
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	
+	<localRepository>C:/Users/zhouyilong/.m2/repository</localRepository>
+	<servers>
+    <!-- server
+     | Specifies the authentication information to use when connecting to a particular server, identified by
+     | a unique name within the system (referred to by the 'id' attribute below).
+     |
+     | NOTE: You should either specify username/password OR privateKey/passphrase, since these pairings are
+     |       used together.
+     |
+    <server>
+      <id>deploymentRepo</id>
+      <username>repouser</username>
+      <password>repopwd</password>
+    </server>
+    -->
+	<server>
+      <id>nexus-releases</id>
+      <username>admin</username>
+      <password>JoMA7IFNd%SeUjpc</password>
+    </server>
+	<server>
+      <id>nexus-snapshots</id>
+      <username>admin</username>
+      <password>JoMA7IFNd%SeUjpc</password>
+    </server>
+	
+ 
+    <!-- Another sample, using keys to authenticate.
+    <server>
+      <id>siteServer</id>
+      <privateKey>/path/to/private/key</privateKey>
+      <passphrase>optional; leave empty if not used.</passphrase>
+    </server>
+    -->
+  </servers>
+		<!-- <mirrors>
+		<mirror>
+			<id>aliyunmaven</id>
+			<mirrorOf>external:*,!dd,!jeecg,!dd-snapshots</mirrorOf>
+			<name>阿里云公共仓库</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+		</mirror>
+	</mirrors>-->
+	<!-- 
+  <proxies>
+  
+   <proxy>
+      <id>ali-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>127.0.0.1</host>
+      <port>7890</port>
+      <nonProxyHosts>*.aliyun.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+  -->
+  	<!--
+   <proxies>
+   <proxy>
+      <id>ali-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>39.107.57.96</host>
+      <port>17890</port>
+      <nonProxyHosts>*.aliyun.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+    -->
+<!--
+     <proxies>
+   <proxy>
+      <id>ali-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+	  <username>zhouyilong</username>
+      <password>A2xb@4oF2K&amp;nxS8Q</password>
+      <host>ylfty.top</host>
+      <port>7890</port>
+      <nonProxyHosts>*.aliyun.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+    -->
+	
+	<!--
+	 <profiles>
+     <profile>
+       <id>nexus</id>
+       <repositories>
+           <repository>
+               <id>central</id>
+               <url>http://repo1.maven.org/maven2</url>
+               <releases>
+                   <enabled>true</enabled>
+               </releases>
+               <snapshots>
+                   <enabled>true</enabled>
+               </snapshots>
+           </repository>
+       </repositories>
+       <pluginRepositories>
+           <pluginRepository>
+               <id>central</id>
+               <url>http://repo1.maven.org/maven2</url>
+               <releases>
+                   <enabled>true</enabled>
+               </releases>
+               <snapshots>
+                   <enabled>true</enabled>
+               </snapshots>
+           </pluginRepository>
+       </pluginRepositories>
+   </profile>
+   <profile>
+       <id>qcloud-repo</id>
+       <repositories>
+           <repository>
+               <id>qcloud-central</id>
+               <name>qcloud mirror central</name>
+               <url>http://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
+               <snapshots>
+                   <enabled>true</enabled>
+               </snapshots>
+               <releases>
+                   <enabled>true</enabled>
+               </releases>
+           </repository>
+           </repositories>
+       <pluginRepositories>
+           <pluginRepository>
+               <id>qcloud-plugin-central</id>
+               <url>http://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
+               <snapshots>
+                   <enabled>true</enabled>
+               </snapshots>
+               <releases>
+                   <enabled>true</enabled>
+               </releases>
+           </pluginRepository>
+       </pluginRepositories>
+   </profile>
+ </profiles>
+
+ <activeProfiles>
+   <activeProfile>nexus</activeProfile>
+   <activeProfile>qcloud-repo</activeProfile>
+</activeProfiles>
+-->
+</settings>
