@@ -1,1 +1,1 @@
-http1://localhost:8001/jeecg-boot-system/sys/getEncryptedString
+test1
