@@ -1,1 +1,1 @@
-http://localhost:8001/jeecg-boot-system/sys/getEncryptedString
+http1://localhost:8001/jeecg-boot-system/sys/getEncryptedString
